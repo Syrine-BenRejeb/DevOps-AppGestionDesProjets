@@ -33,7 +33,7 @@ sh 'mvn test'
 }
 post {
 always {
-junit 'backend/target/surefire-reports/.xml'
+junit 'backend/target/surefire-reports/*.xml'
 }
 }
 }
