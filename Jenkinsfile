@@ -1,8 +1,8 @@
 pipeline {
 agent any
 tools {
-jdk 'JDK'
-maven 'MAVEN_HOME'
+    jdk 'JDK21'
+    maven 'Maven3'
 }
 environment {
 MAVEN_OPTS = '-Xmx1024m'
