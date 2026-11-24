@@ -45,7 +45,8 @@ sh 'mvn package -DskipTests'
 }
 post {
 success {
-archiveArtifacts artifacts: 'backend/target/.jar', fingerprint: true
+archiveArtifacts artifacts: 'backend/target/*.jar',
+                 fingerprint: true
 }
 }
 }
